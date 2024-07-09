@@ -22,7 +22,7 @@ const Product = ({ src, name, price, about, addToCart, id }: productPropType) =>
   return (
     <div className='flex items-start flex-col w-[80%] justify-between max-w-[284px] mx-auto h-[400px] lg:h-[600px]'>
       <div className='w-full grid place-items-center'>
-        <img className='w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] rounded-full object-cover shadow-product' src={src} />
+        <img className='w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] rounded-full object-cover shadow-product' src={src} />
       </div>
       <h2 className='font-abhayaExtraBold text-2xl text-accent lg:text-[40px]'>{name}</h2>
       <p className='text-lg lg:text-xl font-abhayaMedium text-accent'>{about}</p>
