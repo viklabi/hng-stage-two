@@ -12,21 +12,21 @@ interface headerPropType {
 
 const Header = ({showCart, handleShowCart, cartLength}: headerPropType) => {
   return (
-    <header className='flex items-center justify-between text-accent pr-3 pl-3 md:pr-[18px] md:pl-[45px] lg:pl-14 xl:pl-24 lg:pr-10 xl:pr-[117px] z-20'>
+    <header id='header' className='flex items-center justify-between text-accent pr-3 pl-3 md:pr-[18px] md:pl-[45px] lg:pl-14 xl:pl-24 lg:pr-10 xl:pr-[117px] z-20'>
       <a href='#' className="w-10 md:w-[55.29px]">
         <img src={logo} alt="logo" />
       </a>
-      <ul className='flex items-center lg:gap-8 xl:gap-16 lg:-ml-4 xl:-ml-28'>
-        <li className='hidden lg:block'>
+      <ul className='flex items-center ex:gap-8 xl:gap-16 lg:-ml-4 xl:-ml-28'>
+        <li className='hidden ex:block'>
           <a className='text-lg font-abhayaMedium' href="#">Home</a>
         </li>
-        <li className='hidden lg:block'>
+        <li className='hidden ex:block'>
           <a className='text-lg font-abhayaMedium' href="#">Download App</a>
         </li>
         <li className='relative'>
           <a className='text-lg font-abhayaMedium after:content-[""] after:w-full after:absolute after:h-[3px] after:bottom-0 after:bg-accent after:left-0 after:right-0 after:rounded-full' href="#">Exclusive offers</a>
         </li>
-        <li className='hidden lg:block'>
+        <li className='hidden ex:block'>
           <a className='text-lg font-abhayaMedium' href="#">About Food</a>
         </li>
       </ul>

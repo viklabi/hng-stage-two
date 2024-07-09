@@ -2,14 +2,13 @@ import pushUp from '../assets/push-up.svg'
 import appleStore from '../assets/apple-store.png'
 import playStore from '../assets/play-store.png'
 import logo from '../assets/logo.png' 
-import Button from './Button'
 const Footer = () => {
   return (
     <footer className='py-8'>
-      <Button className="w-[60px] h-[60px] mt-0 mb-7 lg:mb-16 grid place-items-center mx-auto" type='button' onClick={() => console.log('gone up')
-      }>
+      <a href='#header' className="w-[60px] h-[60px] mt-0 mb-7 lg:mb-16 grid place-items-center mx-auto"
+      >
         <img className='h-[53px]' src={pushUp} alt="go to top" />
-      </Button>
+      </a>
 
       <div className='flex items-start flex-wrap md:flex-nowrap gap-5 md:gap-0 text-white justify-between w-[85%] mt-85 mx-auto'>
 

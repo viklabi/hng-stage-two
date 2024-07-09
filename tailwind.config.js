@@ -16,7 +16,7 @@ export default {
         "poppinsRegular": ['poppins-regular', 'sans-serif', 'Helvetica']
       },
       backgroundImage : {
-        "discount": "url('./src/assets/backgrounds/discount-section-bg.png')"
+        "discount": "url('./backgrounds/discount-section-bg.png')"
       },
       boxShadow: {
         'heroBtn': '0 5px 5px 0 rgba(0, 0, 0, .25)',

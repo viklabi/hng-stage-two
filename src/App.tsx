@@ -1,6 +1,6 @@
 import Header from "./Components/Header"
 import Discount from "./Components/Discount"
-import bg from './assets/backgrounds/hero-bg-overlay.png'
+import bg from '/backgrounds/hero-bg-overlay.png'
 import Hero from "./Components/Hero"
 import Footer from "./Components/Footer"
 import ProductParent from "./Components/ProductParent"
@@ -67,13 +67,13 @@ const cartLength = cart.length;
   // }
   return (
     <div className='bg-primary pt-[22px] bg-no-repeat relative'>
-      <img className="absolute z-10 top-4 h-[879px] opacity-15 left-[20%] hidden xl:block" src={bg} alt="" />
+      <img className="absolute z-10 top-4 h-[840px] opacity-15 left-[10%] hidden lg:block" src={bg} alt="" />
       <Header showCart={showCart} handleShowCart={handleShowCart} cartLength={cartLength}/>
       <Hero />
       {showCart ?
         <>
           <ProductParent addToCart={addToCart}/>
-          <SideProductGroup />
+          <SideProductGroup addToCart={addToCart} />
         </>
         : <Cart cart={cart}  removeFromCart={removeFromCart}/>}
       <Discount />

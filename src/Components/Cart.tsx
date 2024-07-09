@@ -51,7 +51,7 @@ const Cart = ({cart,  removeFromCart}: cartPropType) => {
           </Button>
 
           <Button type='button' onClick={() => console.log('Checkout is not ready')} className='h-[50px] bg-[#FF7F3E] border-white border-[3px] rounded-[5px] md:min-w-[300px] w-[75%] max-w-[1000px]'>
-          {`CHECKOUT ${formatPrice(+totalPrice.toFixed(2))}`}
+          {`CHECKOUT ₦${formatPrice(+totalPrice.toFixed(2))}`}
           </Button>
           </div>
     </div>

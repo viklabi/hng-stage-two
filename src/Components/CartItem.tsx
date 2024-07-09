@@ -25,7 +25,7 @@ const CartItem = ({name, price, quantity, src, alt, removeFromCart, id}:cartProp
         <h2 className="lg:text-[40px] text-2xl text-accent font-abhayaExtraBold">{name}</h2>
        <p className="text-[20px] text-accent font-abhayaMedium">{`₦${formatPrice(price*quantity)}`}</p>
 
-       <div className="flex items-center justify-between w-full font-abhayaMedium">
+       <div className="flex items-center justify-between lg:flex-row-reverse px-2 w-full font-abhayaMedium">
         <div className="flex items-center justify-center gap-2">
         <Button type="button" className="bg-green w-[13px] h-[13px] lg:w-[35px] lg:h-[35px] shadow-cart" onClick={() => console.log('+1')}>
           <img className="w-[6px] lg:w-[14px]" src={minus} alt="minus" />
