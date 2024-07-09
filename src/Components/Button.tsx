@@ -4,7 +4,7 @@ interface buttonProps {
   children:  ReactNode,
   className: string,
   type: 'button' | 'submit',
-  onClick: () => void
+  onClick :  () => void
 }
 
 const Button = ({ children, className, onClick, type }: buttonProps) => {

@@ -6,7 +6,8 @@ import Button from './Button'
 const Footer = () => {
   return (
     <footer className='py-8'>
-      <Button className="w-[60px] h-[60px] mt-0 mb-7 lg:mb-16 grid place-items-center mx-auto" type='button'>
+      <Button className="w-[60px] h-[60px] mt-0 mb-7 lg:mb-16 grid place-items-center mx-auto" type='button' onClick={() => console.log('gone up')
+      }>
         <img className='h-[53px]' src={pushUp} alt="go to top" />
       </Button>
 

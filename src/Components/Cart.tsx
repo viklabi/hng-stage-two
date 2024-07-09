@@ -46,12 +46,12 @@ const Cart = ({cart,  removeFromCart}: cartPropType) => {
         
         </div>
         <div className='flex items-center justify-center gap-2 mt-32 mx-auto'>
-          <Button className='h-[50px] w-[50px] border-[#FF7F3E] border-[1.5px] rounded-[5px] grid place-items-center'>
+          <Button type='button' onClick={() => console.log('Phone is not ready')} className='h-[50px] w-[50px] border-[#FF7F3E] border-[1.5px] rounded-[5px] grid place-items-center'>
            <img className='w-[23px]' src={phone} alt="phone" />
           </Button>
 
-          <Button className='h-[50px] bg-[#FF7F3E] border-white border-[3px] rounded-[5px] md:min-w-[300px] w-[75%] max-w-[1000px]'>
-          {`CHECKOUT ${formatPrice(totalPrice.toFixed(2))}`}
+          <Button type='button' onClick={() => console.log('Checkout is not ready')} className='h-[50px] bg-[#FF7F3E] border-white border-[3px] rounded-[5px] md:min-w-[300px] w-[75%] max-w-[1000px]'>
+          {`CHECKOUT ${formatPrice(+totalPrice.toFixed(2))}`}
           </Button>
           </div>
     </div>

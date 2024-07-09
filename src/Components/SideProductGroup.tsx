@@ -9,6 +9,7 @@ interface productPropType {
   about: string,
   id: string
   quantity: number
+  alt:string
 }
 
  const SideProductGroup = () => {
@@ -17,7 +18,7 @@ interface productPropType {
       <h2 className="text-accent mt-4 text-lg lg:absolute lg:bottom-1 lg:left-1/2 lg:-translate-x-1/2 font-abhayaMedium -skew-x-3 skew-y-3 lg:skew-x-0 lg:skew-y-0 mb-9">Sides to go well with your meal!</h2>
       <div className="flex items-center  flex-col gap-8 lg:flex-row lg:absolute lg:-top-10 lg:left-20 lg:right-20 lg:justify-between -skew-x-3 skew-y-3 lg:skew-x-0 lg:skew-y-0">
         {products.filter(product => product.about.trim() == '').map((product: productPropType) =>
-          <SideProduct key={product.id} src={product.src} name={product.name} price={product.price} />
+          <SideProduct key={product.id} src={product.src} name={product.name} price={product.price} alt={product.alt} id={product.id} about={product.about} quantity={product.quantity}  />
         )}
       </div>
     </div>
