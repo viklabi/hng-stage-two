@@ -15,9 +15,6 @@ export default {
         "abhayaMedium": ['abhaya-medium', 'serif'],
         "poppinsRegular": ['poppins-regular', 'sans-serif', 'Helvetica']
       },
-      backgroundImage : {
-        "discount": "url('./backgrounds/discount-section-bg.png')"
-      },
       boxShadow: {
         'heroBtn': '0 5px 5px 0 rgba(0, 0, 0, .25)',
         'product' : '0 7px 7px 0 rgba(0, 0, 0, .25)',
