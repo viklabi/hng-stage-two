@@ -1,7 +1,7 @@
 import pushUp from '../assets/push-up.svg'
 import appleStore from '../assets/apple-store.png'
 import playStore from '../assets/play-store.png'
-import logo from '../assets/logo.png' 
+import logo from '../assets/logo.png'
 const Footer = () => {
   return (
     <footer className='py-8'>
@@ -29,12 +29,12 @@ const Footer = () => {
         <div className='flex items-start flex-col lg:gap-8 lg:items-center'>
           <h5 className='text-sm font-abhayaExtraBold lg:text-2xl'>Download Mobile App</h5>
           <div className='flex center flex-col lg:flex-row gap-2'>
-          <a className='text-primary bg-white flex items-center justify-center w-[95px] h-9 lg:w-[182px] lg:h-[56px] rounded-full lg:rounded-[20px] text-[13px] leading-4 font-abhayaMedium lg:text-2xl'
-            href="#">
-            <img className='w-[15px] lg:w-[30px]' src={playStore} alt="" /><span className='w-[70%]'>Get it on Play Store</span></a>
-          <a className='text-primary bg-white flex items-center justify-center w-[95px] h-9 lg:w-[182px] lg:h-[56px]  rounded-full lg:rounded-[20px]  text-[13px] leading-4 font-abhayaMedium lg:text-2xl' href="#">
-            <img className='w-[15px] lg:w-[30px]' src={appleStore} alt="" /><span className='w-[70%]'>Available on Apple Store</span></a>
-            </div>
+            <a className='text-primary bg-white flex items-center justify-center w-[95px] h-9 lg:w-[182px] lg:h-[56px] rounded-full lg:rounded-[20px] text-[13px] leading-4 font-abhayaMedium lg:text-2xl'
+              href="#">
+              <img className='w-[15px] lg:w-[30px]' src={playStore} alt="" /><span className='w-[70%]'>Get it on Play Store</span></a>
+            <a className='text-primary bg-white flex items-center justify-center w-[95px] h-9 lg:w-[182px] lg:h-[56px]  rounded-full lg:rounded-[20px]  text-[13px] leading-4 font-abhayaMedium lg:text-2xl' href="#">
+              <img className='w-[15px] lg:w-[30px]' src={appleStore} alt="" /><span className='w-[70%]'>Available on Apple Store</span></a>
+          </div>
         </div>
       </div>
       <div>

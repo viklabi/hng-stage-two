@@ -4,6 +4,7 @@ import notifications from '../assets/notifications.svg'
 import search from '../assets/search.svg'
 import profile from '../assets/profile.jpeg'
 import activeCart from '../assets/activeCart.svg'
+
 interface headerPropType {
   showCart: boolean
   cartLength: number
@@ -11,8 +12,10 @@ interface headerPropType {
 }
 
 const Header = ({showCart, handleShowCart, cartLength}: headerPropType) => {
+  
+  
   return (
-    <header id='header' className='flex items-center justify-between text-accent pr-3 pl-3 md:pr-[18px] md:pl-[45px] lg:pl-14 xl:pl-24 lg:pr-10 xl:pr-[117px] z-20'>
+    <header id='header' className='flex absolute right-0 left-0 items-center justify-between text-accent pr-3 pl-3 md:pr-[18px] md:pl-[45px] lg:pl-14 xl:pl-24 lg:pr-10 xl:pr-[117px] z-20'>
       <a href='#' className="w-10 md:w-[55.29px]">
         <img src={logo} alt="logo" />
       </a>
